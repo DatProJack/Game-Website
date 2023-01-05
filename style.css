@@ -18,16 +18,43 @@ nav{
     color:black;
     font-size:1.5rem;
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
     padding:0 2rem;
 }
 
 nav a {
     text-decoration: none;
-    color:black;
+    color:#000000;
     padding: 0 1.5rem;
+}
+nav a:hover{
+  color:white;
 }
 
 .hero {
     background:rgb(8, 139, 108);
+}
+
+.button {
+  background:#ffbb00;
+  margin:5px;
+}
+
+.game{
+  background:rgb(8, 139, 108);
+  padding:20px;
+}
+
+.filler{
+  background:rgb(8, 139, 108);
+  height:auto;
+  width:auto;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
