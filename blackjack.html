@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="snake.js"></script>
   
    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
@@ -16,7 +15,7 @@
     <nav>
         <div class="logo" title="Let's play!">Alex Yang</div>
         <div class="nav-items">
-            <a href="blackjack.html">Blackjack</a>
+            <a href="index.html">Snake</a>
             <a href="/">Coming soon...</a>
             <a href="/">Coming soon...</a>
         </div>
@@ -26,28 +25,46 @@
         <div class="hero-container">
             <div class="column-left">
                 <h1>Welcome!</h1>
-                <p>I'm still working to add more javascript games to this website, but for now you can enjoy snake!</p>
+                <p>I'm still working to add more javascript games to this website, but for now you can enjoy blackjack. If the cards don't load, try reloading the page.</p>
             </div>
             <div style="text-align:center;display:flex; justify-content:center">
-              <button class="button" onclick="start();">Click here to play</button>
               <form>
   <button class="button" target="_blank" formaction="https://github.com/DatProJack/Snake-Website" >Click here for the source code</button>
               </form>
             </div>
-          <canvas id="board" width="0" height="0"></canvas>
-    </section>
-    <section class="filler">
-      <div id="myDIV" style="text-align:center;background:rgb(8, 139, 108);padding:20px">
-        <img src="https://www.clipartmax.com/png/full/5-54311_clipart-snake-cartoon-snakes-clip-art-page-2-snake-snake-clipart.png" alt="image of a snake" style="width:80%;background:rgb(8, 139, 108)">
-      </div>
-      <div id="score" style="position:absolute;top:180px;left:45vw;z-index:100;color:red;display:none">
-        Score: 0
-      </div>
-    </section>
+          <div id="card_img" style="text-align:center;background:rgb(8, 139, 108);padding:20px">
+      <div id = "GAME" class="layout"><!-- blackjack is here--->
+        <h2>Dealer Hand</h2>
+        <div class="wrapper">
+            <div class="cards" id="dealer">
+            </div>
+        </div>
+        <h2 id= "player-score">Player Hand</h2>
+        <div class="wrapper">
+            <div class="cards" id="player">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container" id="button-container">
+                <button id="hit-button">Hit</button>
+                <button id="pass-button">Pass</button>
+                <button onClick="window.location.reload();">Reset</button>
+            </div>
+        </div>
+        <div class="background" id="notice">
+        <div class="notice">
+            <p></p>
+            <button id="next-hand-button">Deal Next Hand</button>
+        </div>
+        </div>
+    </div>
+  
 
   <div style="position:absolute;top:0;left:0;z-index:-100;background:rgb(8, 139, 108);width:100vw;height:100vh">
     </div>
 
-    
+    <body>
+</body>
+    <script src="blackjack.js"></script>
 </body>
 </html>
